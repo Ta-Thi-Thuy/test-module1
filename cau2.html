@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [3,4,5,4,4,8,2,7,9,4,4];
+    let nums = +prompt('Number to be deleted :');
+    function tryRemoveFromArray(nums, array) {
+        for (let i = array.length - 1; i >= 0; i--) {
+            if (nums === array[i]) {
+                array.splice(i, 1);
+            }
+        }
+        return array;
+    }
+    document.write(tryRemoveFromArray(nums,array));
+</script>
+</body>
+</html>
